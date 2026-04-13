@@ -1,1 +1,10 @@
-print("hellow")
+h=float(input("身高（米）："))
+w=float(input("体重（kg）："))
+bmi=w/h**2
+print(f'{bmi = :.1f}')
+if 18.5<bmi<24:
+    print('你的身材很好！')
+elif 18.5>bmi:
+    print('体重过轻！')
+else:
+    print('肥胖！')
