@@ -8,3 +8,13 @@ elif 18.5>bmi:
     print('体重过轻！')
 else:
     print('肥胖！')
+
+x=float(input('x='))
+if x > 1:
+    y = 3 * x - 5
+elif x >= -1:
+    y = x + 2
+else:
+    y = 5 * x + 3
+print(f'{y=}')
+
