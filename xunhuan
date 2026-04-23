@@ -38,7 +38,7 @@ while y % x != 0:
     x, y = y % x, x
 print(f'最大公约数: {x}')
 
-for num in range(2,100):
+for num in range(2,5):
     u=True
     for i in range(2,int(num**0.5)+1):
         if num % i==0:
@@ -46,3 +46,17 @@ for num in range(2,100):
             break
         if u:
             print(num)
+
+print( )
+
+a,b=0,1
+for _ in range(5):
+    a,b=b,a+b
+    print(a)
+
+for num in range(100,200):
+    l=num%10
+    m=num//10%10
+    h=num//100
+    if num==l**3+m**3+h**3:
+        print(num)
