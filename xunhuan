@@ -7,3 +7,42 @@ t=0
 for i in range(1,101):
     t+=i
 print(t)
+
+for i in range(1,2):
+    for j in range(1,i+1):
+        print(f'{i}x{j}={i*j}',end='\t')
+    print()
+
+n=int(input('输入一个正整数：'))
+e=int(n**0.5)
+sushu=True
+for i in range(2,e+1):
+    if n%i==0:
+        sushu=False
+        break
+if sushu:
+    print(f'{n}是素数')
+else:
+    print(f'{n}不是素数')    
+
+x = int(input('x = '))
+y = int(input('y = '))
+for i in range(x, 0, -1):
+    if x % i == 0 and y % i == 0:
+        print(f'最大公约数: {i}')
+        break
+
+x = int(input('x = '))
+y = int(input('y = '))
+while y % x != 0:
+    x, y = y % x, x
+print(f'最大公约数: {x}')
+
+for num in range(2,100):
+    u=True
+    for i in range(2,int(num**0.5)+1):
+        if num % i==0:
+            u=False
+            break
+        if u:
+            print(num)
